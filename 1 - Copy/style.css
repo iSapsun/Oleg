@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #eee;      /* як у input */
+  border-radius: 0;            /* як у input */
+}
+input {
+  border: 1px solid #eee;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  background-color: #f9f9f9;
+  color: #696969;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+label{
+  display: block;
+  position: relative;
+  bottom: -10px;
+  width: fit-content;
+  left: 10px;
+  padding: 0px 5px;
+  background-color: rgba(255,255,255,0.3);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 6px;
+  border: 1px solid #757575;
+}
+
+button {
+  border: 1px solid #eee;      /* як у input */
+  border-radius: 0;            /* як у input */
+  padding: 8px 15px;
+  height: 30px; 
+  width: 150px;
+  font-weight: bold;
+  background: #fff;
+  color: #696969;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+button:active, button:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 200px;      
+  min-width: 200px;  
+  flex: 0 0 200px;   
+}
+
+/* Кнопка додати */
+.form-row button {
+  align-self: flex-end;
+  margin-left: 2px;
+}
+
+.form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-actions button {
+  width: 200px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+th {
+    text-align: left;
+    color: #fff;
+    background-color: #a3a3a3;
+    border: 1px solid #eee;      /* як у input */
+    border-radius: 0;            /* як у input */
+}
+td {
+    /* min-width: 250px; */ /* Прибрати або закоментувати цей рядок */
+    color: #696969;
+    border-bottom: 1px solid #eee;
+    word-break: break-word; /* Додає перенос слів для довгих значень */
+    border: 1px solid #eee;      /* як у input */
+    border-radius: 0;            /* як у input */
+}
+th, td {
+    padding: 10px;
+    height: 20px;
+}
+td:first-child {
+    width: 150px;
+    min-width: 0;
+}
+th:last-child {
+    text-align: right;
+}
+td:last-child {
+    width: 80px;
+    min-width: 0;
+    text-align: center;
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.my-class {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
